@@ -1,154 +1,220 @@
+/* ===============================
+   🔹 Global Styles
+================================= */
 body {
     margin: 0;
-    font-family: Arial;
-    background: linear-gradient(to right, #0f0f0f, #1a1a1a);
-    color: white;
-    scroll-behavior: smooth;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0a0a0a; /* مشکی */
+    color: #f5f5f5; /* متن سفید */
 }
 
-/* 🔷 NAVBAR */
+a {
+    text-decoration: none;
+    color: #f5f5f5;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+/* ===============================
+   🔹 Navbar
+================================= */
 .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    background-color: #111111;
     padding: 15px 30px;
-    background: black;
-    border-bottom: 1px solid gold;
     position: sticky;
     top: 0;
+    z-index: 100;
 }
 
 .navbar h2 {
-    color: gold;
+    color: #ffd700; /* طلایی */
+    font-weight: bold;
 }
 
 .navbar ul {
+    list-style: none;
     display: flex;
     gap: 20px;
-    list-style: none;
 }
 
-.navbar a {
-    color: white;
-    text-decoration: none;
+.navbar ul li a:hover {
+    color: #32cd32; /* سبز روشن */
 }
 
-.navbar a:hover {
-    color: gold;
-}
-
-/* 🔷 HERO */
+/* ===============================
+   🔹 Hero Section
+================================= */
 .hero {
     text-align: center;
-    padding: 60px 20px;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #111111, #1c1c1c);
 }
 
-.logo {
-    width: 120px;
-    border-radius: 10px;
+.hero .logo {
+    width: 150px;
+    margin-bottom: 20px;
+    border-radius: 15px;
 }
 
-h1 {
-    color: gold;
+.hero h1 {
+    font-size: 48px;
+    color: #ffd700;
 }
 
-/* 🔷 COURSES */
+.hero h2 {
+    font-size: 28px;
+    color: #32cd32;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #f5f5f5;
+}
+
+/* ===============================
+   🔹 Courses Section
+================================= */
 .courses {
-    padding: 50px 20px;
+    padding: 60px 20px;
     text-align: center;
+}
+
+.courses h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #ffd700;
 }
 
 .course-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
+    justify-items: center;
 }
 
 .card {
-    background: #1f1f1f;
+    background-color: #1c1c1c;
     padding: 20px;
-    border-radius: 12px;
+    border-radius: 15px;
+    width: 100%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+    transition: transform 0.3s, box-shadow 0.3s;
     font-weight: bold;
-    transition: 0.3s;
 }
 
 .card:hover {
-    transform: scale(1.05);
-    background: gold;
-    color: black;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(50, 205, 50, 0.8);
 }
 
-/* 🔷 فیس */
 .fee {
     margin-top: 10px;
-    padding: 8px;
-    background: black;
-    border: 1px solid gold;
-    border-radius: 8px;
-    font-size: 14px;
-    color: gold;
+    color: #32cd32; /* سبز */
+    font-weight: bold;
 }
 
-/* 🔷 متن بیشتر */
 .more {
     margin-top: 30px;
-    color: gold;
+    font-size: 18px;
+    color: #ffd700;
 }
 
-/* 🔷 ABOUT */
+/* ===============================
+   🔹 About Section
+================================= */
 .about {
-    padding: 50px;
-    background: #111;
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #111111;
 }
 
-/* 🔷 CONTACT */
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffd700;
+}
+
+.about p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* ===============================
+   🔹 Contact Section
+================================= */
 .contact {
-    padding: 40px;
-    background: black;
-    border-top: 1px solid gold;
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #1c1c1c;
 }
 
-/* 🔷 واتساپ باکس */
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #ffd700;
+}
+
 .contact-box {
-    display: block;
-    text-decoration: none;
-    color: white;
-    background: #1a1a1a;
-    border: 1px solid gold;
-    padding: 12px;
-    margin: 10px auto;
-    width: 260px;
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 20px;
+    background-color: #32cd32;
+    color: #0a0a0a;
     border-radius: 10px;
     font-weight: bold;
-    transition: 0.3s;
+    transition: background 0.3s;
 }
 
 .contact-box:hover {
-    background: gold;
-    color: black;
+    background-color: #ffd700;
 }
 
-/* 🔷 واتساپ شناور */
+/* ===============================
+   🔹 WhatsApp Float
+================================= */
 .whatsapp-float {
     position: fixed;
-    bottom: 25px;
-    right: 25px;
-    z-index: 100;
+    bottom: 20px;
+    right: 20px;
     width: 60px;
     height: 60px;
-    border-radius: 50%;
-    background-color: #25D366;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-    transition: 0.3s;
+    z-index: 999;
 }
 
 .whatsapp-float img {
-    width: 35px;
-    height: 35px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(50,205,50,0.7);
+    transition: transform 0.3s;
 }
 
-.whatsapp-float:hover {
+.whatsapp-float img:hover {
     transform: scale(1.1);
+}
+
+/* ===============================
+   🔹 Responsive
+================================= */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
 }
