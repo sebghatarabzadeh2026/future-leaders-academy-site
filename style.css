@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+    color: white;
+    scroll-behavior: smooth;
+}
+
+/* 🔷 NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: black;
+    border-bottom: 1px solid gold;
+    position: sticky;
+    top: 0;
+}
+
+.navbar h2 {
+    color: gold;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: gold;
+}
+
+/* 🔷 HERO */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.logo {
+    width: 120px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: gold;
+}
+
+/* 🔷 COURSES */
+.courses {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.course-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #1f1f1f;
+    padding: 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background: gold;
+    color: black;
+}
+
+/* 🔷 فیس */
+.fee {
+    margin-top: 10px;
+    padding: 8px;
+    background: black;
+    border: 1px solid gold;
+    border-radius: 8px;
+    font-size: 14px;
+    color: gold;
+}
+
+/* 🔷 متن بیشتر */
+.more {
+    margin-top: 30px;
+    color: gold;
+}
+
+/* 🔷 ABOUT */
+.about {
+    padding: 50px;
+    background: #111;
+}
+
+/* 🔷 CONTACT */
+.contact {
+    padding: 40px;
+    background: black;
+    border-top: 1px solid gold;
+}
+
+/* 🔷 واتساپ باکس */
+.contact-box {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background: #1a1a1a;
+    border: 1px solid gold;
+    padding: 12px;
+    margin: 10px auto;
+    width: 260px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.contact-box:hover {
+    background: gold;
+    color: black;
+}
+
+/* 🔷 واتساپ شناور */
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 100;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #25D366;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.whatsapp-float img {
+    width: 35px;
+    height: 35px;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
